@@ -1,0 +1,6 @@
+Custom Component Checklist:
+---------------------------
+
+1.) Create and return a custom component		[X]
+2.) Create a public interface				[X]
+3.) Instrument with custom events			[X]
