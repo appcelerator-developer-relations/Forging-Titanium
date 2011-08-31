@@ -1,0 +1,9 @@
+var UtilityWindow = require('ui/UtilityWindow').UtilityWindow;
+
+new UtilityWindow(
+	Ti.UI.createView({backgroundColor:'#ffffff'}), 	//main app view
+	Ti.UI.createView({								//settings view, with custom property for window title
+		backgroundColor:'#ffffff',
+		title:'Settings'
+	})
+).open();

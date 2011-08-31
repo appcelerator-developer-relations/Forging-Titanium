@@ -1,0 +1,23 @@
+#Wed Aug 31 13:10:46 CDT 2011
+com.vectrace.mercurialeclipse.ui.colorsandfonts.removedBackgroundColor=249,249,249
+com.vectrace.mercurialeclipse.ui.colorsandfonts.conflictForegroundColor=8,8,8
+com.vectrace.mercurialeclipse.ui.colorsandfonts.deletedBackgroundColor=249,249,249
+HYPERLINK_COLOR=0,0,255
+ACTIVE_HYPERLINK_COLOR=0,0,255
+hyperlinkColor=0,0,255
+com.vectrace.mercurialeclipse.ui.colorsandfonts.unknownForegroundColor=8,8,8
+eclipse.preferences.version=1
+com.vectrace.mercurialeclipse.ui.colorsandfonts.IgnoredBackgroundColor=249,249,249
+hyperlinkColor.SystemDefault=false
+org.eclipse.egit.ui.UncommittedChangeBackgroundColor=115,255,101
+com.vectrace.mercurialeclipse.ui.colorsandfonts.addedBackgroundColor=115,255,101
+com.vectrace.mercurialeclipse.ui.colorsandfonts.removedForegroundColor=89,20,14
+com.vectrace.mercurialeclipse.ui.colorsandfonts.deletedForegroundColor=89,20,14
+com.vectrace.mercurialeclipse.ui.colorsandfonts.conflictBackgroundColor=249,249,249
+com.aptana.explorer.font=1|Monaco|10.0|0|COCOA|1|Monaco;
+com.vectrace.mercurialeclipse.ui.colorsandfonts.IgnoredForegroundColor=8,8,8
+org.eclipse.egit.ui.UncommittedChangeForegroundColor=0,0,0
+com.vectrace.mercurialeclipse.ui.colorsandfonts.changedForegroundColor=255,255,255
+com.vectrace.mercurialeclipse.ui.colorsandfonts.addedForegroundColor=0,0,0
+com.vectrace.mercurialeclipse.ui.colorsandfonts.unknownBackgroundColor=249,249,249
+com.vectrace.mercurialeclipse.ui.colorsandfonts.changedBackgroundColor=245,196,17

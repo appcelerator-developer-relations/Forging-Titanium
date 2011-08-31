@@ -1,0 +1,38 @@
+exports.UtilityWindow = function(mainView, settingsView) {
+	var instance = Ti.UI.createWindow({
+		backgroundColor: '#fff',
+		navBarHidden: true,
+		exitOnClose: true,
+		//Android specific, iOS will ignore
+		activity: {
+			onCreateOptionsMenu : function(e) {
+				var menu = e.menu;
+				var settingsButton = menu.add({
+					title: 'Settings'
+				});
+				settingsButton.setIcon(Ti.Android.R.drawable.ic_menu_preferences);
+				settingsButton.addEventListener('click', function(e) {
+
+				});
+			}
+		}
+	});
+
+	//add the main application view
+	instance.add(mainView);
+
+	//on iOS, overlay the info icon/system button
+	if(Ti.Platform.osname === 'iphone') {
+		var btn = Ti.UI.createButton({
+			systemButton: Ti.UI.iPhone.SystemButton.INFO_LIGHT
+		});
+		infolight.addEventListener('click', function() {
+			Titanium.UI.createAlertDialog({
+				title: 'System Button',
+				message: 'INFO_LIGHT'
+			}).show();
+		});
+	}
+
+	return instance;
+};

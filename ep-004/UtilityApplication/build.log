@@ -1,0 +1,31 @@
+Logfile initialized
+[INFO] logfile = /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/build.log
+[DEBUG] /Library/Application Support/Titanium/mobilesdk/osx/1.7.3.v20110826161351/android/builder.py simulator UtilityApplication /Users/kevin/dev/android/android-sdk-r12 /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication com.appcelerator.utility 8 HVGA 
+[INFO] Building UtilityApplication for Android ... one moment
+[INFO] Titanium SDK version: 1.7.3 (08/26/11 16:13 ac72fea...)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 2 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.032238 seconds on emulator to get ready
+[DEBUG] com.appcelerator.utility installed? True
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying project resources..
+[TRACE] COPYING MODIFIED FILE: /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/Resources/ui/UtilityWindow.js => /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/build/android/bin/assets/Resources/ui/UtilityWindow.js
+[INFO] Tiapp.xml unchanged, skipping class generation
+[DEBUG] Processing Android resource drawables
+[DEBUG] found drawable-long-land-hdpi splash screen at /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] found drawable-long-land-ldpi splash screen at /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] found drawable-long-port-hdpi splash screen at /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] found drawable-long-port-ldpi splash screen at /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/kevin/dev/appc/Forging-Titanium/ep-004/UtilityApplication/Resources/android/images/res-notlong-port-mdpi/default.png
+[INFO] Waiting for SDCard to become available..
+[INFO] Re-launching application ... UtilityApplication
+[INFO] Launching application ... UtilityApplication
+[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.appcelerator.utility/.UtilityapplicationActivity }
+Warning: Activity not started, its current task has been brought to the front
+

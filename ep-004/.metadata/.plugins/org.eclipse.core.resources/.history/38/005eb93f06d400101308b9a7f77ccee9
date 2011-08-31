@@ -1,0 +1,40 @@
+exports.UtilityWindow = function(mainView, settingsView) {
+	var instance = Ti.UI.createWindow({
+		backgroundColor: '#fff',
+		navBarHidden: true,
+		exitOnClose: true,
+		//Android specific, iOS will ignore
+		activity: {
+			onCreateOptionsMenu : function(e) {
+				var menu = e.menu;
+				var settingsButton = menu.add({
+					title: 'Settings'
+				});
+				settingsButton.setIcon(Ti.Android.R.drawable.ic_menu_preferences);
+				settingsButton.addEventListener('click', function(e) {
+					//show the settings view in an Android-specific way
+					var settings = Ti.UI.createWindow({
+						title:settingsView
+					});
+					
+					settings.open();
+				});
+			}
+		}
+	});
+
+	//add the main application view
+	instance.add(mainView);
+
+	//on iOS, overlay the info icon/system button
+	if(Ti.Platform.osname === 'iphone') {
+		var btn = Ti.UI.createButton({
+			systemButton: Ti.UI.iPhone.SystemButton.INFO_LIGHT
+		});
+		btn.addEventListener('click', function() {
+			
+		});
+	}
+
+	return instance;
+};

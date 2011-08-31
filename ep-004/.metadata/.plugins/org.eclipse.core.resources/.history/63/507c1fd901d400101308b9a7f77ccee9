@@ -1,0 +1,3 @@
+var UtilityWindow = require('ui/UtilityWindow').UtilityWindow;
+
+new UtilityWindow().open();

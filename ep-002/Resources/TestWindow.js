@@ -27,5 +27,16 @@ exports.TestWindow = function(navController) {
 	});
 	win.add(home);
 	
+	var homey = Ti.UI.createButton({
+		title:'Go to the Home Window',
+		height:'50dp',
+		width:'200dp',
+		top:'20dp'
+	});
+	homey.addEventListener('click', function() {
+		alert(typeof win.activity);
+	});
+	win.add(homey);
+	
 	return win;
 };

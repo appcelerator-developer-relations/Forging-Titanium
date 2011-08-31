@@ -1,0 +1,10 @@
+var UtilityWindow = require('ui/UtilityWindow').UtilityWindow;
+
+new UtilityWindow(
+	Ti.UI.createView({backgroundColor:'#ffffff'}), 	//main app view
+	Ti.UI.createView({								//settings view, with custom properties
+		backgroundColor:'#ffffff',
+		title:'Settings',
+		icon:Ti.Android.R.drawable.ic_menu_settings
+	})
+).open();

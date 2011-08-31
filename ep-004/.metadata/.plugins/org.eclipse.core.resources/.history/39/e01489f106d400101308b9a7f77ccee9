@@ -1,0 +1,17 @@
+exports.SettingsView = function() {
+	var instance = Ti.UI.createView({
+		backgroundColor:'#fff'
+	});
+	
+	var label = Ti.UI.ceateLabel({
+		text:'Settings View: tap to close',
+		color:'#000'
+	});
+	
+	label.addEventListener('click', function() {
+		Ti.App.fireEvent('app:dismiss.settings');
+	});
+	instance.add(label);
+	
+	return instance;
+};
