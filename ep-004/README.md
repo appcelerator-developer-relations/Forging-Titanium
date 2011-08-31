@@ -1,4 +1,4 @@
-# Episode 3: Custom Components
+# Episode 4: A Utility Application Template
 
 In Episode 2, we took a look at a framework for displaying a stack of windows in a cross-platform navigation controller.  This week, we'll be taking a look at implementing a simple two-stage utility application, while isolating our cross-platform navigation code to a single component.
 
