@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.appcelerator.titanium.feature.rcp:1.0.4.201108101535-7e7aDWFFsIz02VgPsBez-_1FBchl"/>
+		<item value="com.appcelerator.titanium.feature:1.0.4.1312852893-607779B8AGJGHLI5CGDKDmDm5RC6"/>
+		<item value="com.appcelerator.titanium.studio:1.0.4.1312852893-7E337c-bn8woNOS"/>
+		<item value="com.aptana.feature.studio:3.0.4.201108101432-7E37B7HFEHCdSHSV5R_IyJetqA_B"/>
+		<item value="com.aptana.feature:3.0.4.1313008478-BJ7D8HBWHC1bBh4C11DC34EViBL5"/>
+		<item value="com.aptana.php.feature:3.0.3.1312394274-7D-27CE8BEWHBQH"/>
+		<item value="org.eclipse.help:1.2.1.r362_v20101111-7e7jEVFDr6xg-LSlC_z0w1D"/>
+		<item value="org.eclipse.platform:3.6.2.r362_v20110210-9gF78Gs1FrIGnHDHWkEcopoN8AmxeZflGDGKQi"/>
+		<item value="org.eclipse.rcp:3.6.2.r362_v20101104-9SAxFMKFkSAqi8axkv1ZjegmiBLY"/>
+		<item value="org.python.pydev.django_templates.feature:2.2.1.2011073123"/>
+		<item value="org.python.pydev.feature:2.2.1.2011073123"/>
+		<item value="org.radrails.rails:3.0.3.201108101424-7e-7Q7f4b2QfPuHR"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="484" key="DIALOG_WIDTH"/>
+		<item value="172" key="DIALOG_Y_ORIGIN"/>
+		<item value="356" key="DIALOG_HEIGHT"/>
+		<item value="398" key="DIALOG_X_ORIGIN"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+	</section>
+</section>

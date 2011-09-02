@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<launchConfiguration type="com.appcelerator.titanium.mobile.android.simulator.launchConfigurationType">
-<stringAttribute key="ATTR_LOG_LEVEL" value="Info"/>
-<stringAttribute key="ATTR_PROJECT_NAME" value="UtilityApplication"/>
-<stringAttribute key="screen_type" value="HVGA"/>
-<stringAttribute key="sdk_version" value="Google APIs Android 2.3.3"/>
-</launchConfiguration>
