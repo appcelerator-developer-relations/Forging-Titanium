@@ -4,7 +4,7 @@ exports.TestWindow = function(navController) {
 		backgroundColor:'#fff',
 		layout:'vertical'
 	});
-	
+
 	var add = Ti.UI.createButton({
 		title:'Add A New Window',
 		height:'50dp',
@@ -15,7 +15,7 @@ exports.TestWindow = function(navController) {
 		navController.open(new TestWindow(navController));
 	});
 	win.add(add);
-	
+
 	var home = Ti.UI.createButton({
 		title:'Go to the Home Window',
 		height:'50dp',
@@ -26,17 +26,6 @@ exports.TestWindow = function(navController) {
 		navController.home();
 	});
 	win.add(home);
-	
-	var homey = Ti.UI.createButton({
-		title:'Go to the Home Window',
-		height:'50dp',
-		width:'200dp',
-		top:'20dp'
-	});
-	homey.addEventListener('click', function() {
-		alert(typeof win.activity);
-	});
-	win.add(homey);
-	
+
 	return win;
 };
