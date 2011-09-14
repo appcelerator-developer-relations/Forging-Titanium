@@ -99,3 +99,5 @@ Logfile initialized
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.appcelerator.sctabgroup/.SctabgroupActivity }
 
 [INFO] Deployed SCTabGroup ... Application should be running.
+[DEBUG] signal caught: 15
+[DEBUG] calling emulator kill on 21062
