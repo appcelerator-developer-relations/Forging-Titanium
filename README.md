@@ -10,3 +10,4 @@ Sample code and other resources associated with each episode will be found here.
 * __Episode 3 (ep-003):__ Creating Custom Components
 * __Episode 4 (ep-004):__ Utility Application Template
 * __Episode 5 (ep-005):__ Parse - A Simple Back End Server for Mobile Applications
+* __Episode 6 (ep-006):__ A Single Context Tab Group Template

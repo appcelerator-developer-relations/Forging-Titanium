@@ -1,3 +1,0 @@
-exports.TodoWindow = function() {
-	var win = Ti.UI.create
-};

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Parse/Resources/HighScoreWindow.js&apos; to &apos;ui.js&apos;" description="Rename resource &apos;HighScoreWindow.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/HighScoreWindow.js" name="ui.js" stamp="1315371324467" updateReferences="true"/>
-</session>
