@@ -10,6 +10,6 @@ Episode Resources:
 
 <ul>
 	<li><a href="http://wiki.appcelerator.org/display/guides/The+Titanium+JavaScript+Environment#TheTitaniumJavaScriptEnvironment-ExecutionContexts">The Titanium JavaScript environment</a></li>
-	<li><a href="http://github.com/appcelerator/Kitchen Sink">Titanium Mobile Kitchen Sink</a></li>
+	<li><a href="http://github.com/appcelerator/KitchenSink">Titanium Mobile Kitchen Sink</a></li>
 	<li><a href="https://github.com/appcelerator-developer-relations/Forging-Titanium">Forging Titanium GitHub repository (source)</a></li>
 </ul>
