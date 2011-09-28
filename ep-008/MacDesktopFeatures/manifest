@@ -1,0 +1,20 @@
+#appname:MacDesktopFeatures
+#publisher:kevin
+#url:http://appcelerator.com
+#image:default_app_logo.png
+#appid:com.appcelerator.mac
+#desc:not specified
+#type:desktop
+#guid:8b01805a-27d4-4e7d-84b6-c5efd9e2d6f6
+runtime:1.2.0.RC4
+tiapp:1.2.0.RC4
+tifilesystem:1.2.0.RC4
+tiplatform:1.2.0.RC4
+tiui:1.2.0.RC4
+ticodec:1.2.0.RC4
+tidatabase:1.2.0.RC4
+timedia:1.2.0.RC4
+timonkey:1.2.0.RC4
+tinetwork:1.2.0.RC4
+tiprocess:1.2.0.RC4
+tiworker:1.2.0.RC4

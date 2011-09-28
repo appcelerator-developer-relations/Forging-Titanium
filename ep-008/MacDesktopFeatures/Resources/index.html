@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Mac Features</title>
+	<script type="text/javascript" charset="utf-8">
+		window.onload = function() {
+			Titanium.UI.setBadge('123456');
+			
+			var tray = Titanium.UI.addTray('tweetanium16.png');
+			
+			var menu = Titanium.UI.createMenu(),
+				item1 = Titanium.UI.createMenuItem('Option 1'),
+				item2 = Titanium.UI.createMenuItem('Option 2'),
+				item3 = Titanium.UI.createMenuItem('Option 3');
+				
+			item3.addItem('Run...', function() {
+				alert('run!');
+			});
+				
+			menu.appendItem(item1);
+			menu.appendItem(item2);
+			menu.appendItem(item3);
+			
+			tray.setMenu(menu);
+			Titanium.UI.setMenu(menu);
+			Titanium.UI.setDockMenu(menu);
+		};
+	</script>
+</head>
+<body>
+	<h1>Hello Mac!</h1>
+</body>
+</html>

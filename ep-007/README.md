@@ -1,4 +1,4 @@
-# Episode Titanium and Twilio for Cloud Communications
+# Episode 7: Titanium and Twilio for Cloud Communications
 
 In this week's episode, we'll be taking a look at <a href="http://twilio.com">Twilio</a>, a cloud-based service for adding telephony features to applications through a RESTful web service API.  Using Twilio, developers can send and receive phone calls and SMS text messages, enabling the creation of interfaces that pass beyond the reach of smart phones.
 
