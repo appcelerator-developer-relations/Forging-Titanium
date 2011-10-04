@@ -1,0 +1,6 @@
+tmp
+.DS_Store
+build/android/*
+!build/android/.gitignore
+.settings
+build.log
