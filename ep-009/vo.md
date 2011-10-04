@@ -1,1 +1,44 @@
-Hi everybody. Thanks for checking out this screencast. In this week's 
+Hi everybody. Thanks for checking out this screencast. In this week's episode of "Forging Titanium" we'll be taking a look at how we can use Android Intents in our Titanium apps. Intents provide powerful native functionality that allows us to send tasks, like editing a contact or playing a video, to other apps installed on our Android devices. If you're totally unfamiliar Android Intents, be sure to check out the "Helpful Links" section of the blog post accompanying this screencast.
+
+As with most powerful technology, Android Intents come with a little complexity. To make the topic easier to digest, I've created an easy to follow Intent cookbook app. As you can see, it's not unlike the Titanium Kitchen Sink layout. We can navigate through the lists to test out the various Android Intent functionality available to our apps. Before we dive into the examples, though, let's take a look at the code.
+
+Starting at the top, we're just using the method I put forth in my "Sharing Project Assets with Android Intents" blog post. The local assets are being copied to external storage so that they can be accessed by any Intent.
+
+Next we have the reason we're all here: the intent listing. Each intent is categorized and then created for use in our app. The really important section to pay attention to is the 'intent' property. This is the chunk of code that does the magic. With these simple intents, properly formatted, we can do just about anything on an Android device. This listing includes contact, media, phone, geolocation, and text operations, but this is only the tip of the iceberg. Be sure to check out the full documentation on what's possible with intents in the official Android Intent documentation.
+
+The startActivity function shows us 2 very important things. 1, that all we need to do to fire an intent request is call Ti.Android.currentActivity.startActivity with our intent and an optional callback. And 2, that we should always use exception handling when attempting to fire an intent request. If you don't, you'll get a potentially fatal error if your request finds no app to receive it. For example, if you fire an intent request to view a PDF and you have no PDF viewer on your Android device, an exception will be thrown. 
+
+Next we follow up with the UI code for the app and end near one more important event handler. Since we want to be good little coders and clean up after ourselves when we're done, we listen for the window close event and then delete our external storage directory.
+
+Now that we have a handle on how the cookbook app works, let's walk through a few examples of the intents in action. We'll start with the "Image, Video, & Sound" listing. The simplest instance of intents is when your device has only one app to handle the request. For example, let's see what happens when I click "view image"... our image automatically opens in the default Android image viewer. If we take a look at the code for this intent, we'll see that this is the only app with an Intent Filter that handles the viewing of jpeg images.
+
+A more interesting example of intent usage is when many apps can handle your request. For example, let's try "send video". Here we see a listing of all the apps available on my device that support the sending of video via intent. Let's click on Gmail... Now we have an email ready to be sent with our video already attached. The best part about this? You can add functionality to your own apps that sends video, or most other forms data, via any number of apps with less than 10 lines of code. 
+
+So let's back out to the main intent listing and do a full walkthrough of Android Contacts. Here we can view, pick, edit, or add contacts. Just a heads up, if you run this app on your own, you'll likely want to run it on a device. The Android emulator comes with no stock contacts, so you'll have to add them manually before you can use a majority of these intents. One more note is that Titanium's interface to native Android intents maps directly to constants found in the official Android Intent documentation. Any string values you see in the action, type, data, or extra fields of intents comes directly from that documentation.
+
+Let's start by adding a new contact. The code necessary to do so is pretty straight forward. We create an Intent with the action value com.android.contacts.action.SHOW_OR_CREATE_CONTACT and give it an email URI as data. This would be enough to open Android's "add contact" interface, but we'll take it a step further. We'll also add additional "extra" fields to the intent, which will populate the email, phone, name, and company fields in the resulting "add contacts" interface. 
+
+Let's click "add contact" to see it in action... click OK, then "create new contact". If necessary, select the account to which this contact will be stored and click OK. We are now presented with the Android contact interface, prepopulated with the values we supplied via intent extras. From this interface a user can add additional contact details or modify the information we already filled in. When finished we click "save". This saves the new contact to our device's contact list, then automatically returns us to the cookbook app.
+
+Let's say we now want to edit the entry we just put in. To do so, we'll leverage a combination of android intents. We'll first "pick" the contact from a list, then edit it via the Android contact interface. Let's take a look at how we do this in our code...
+
+Picking a contact is really simple. We just need to create an intent that has an action equal to the Titanium.Android constant "ACTION_PICK" and a type equal to the Android contact URI of 'vnd.android.cursor.dir/person'. When we launch this intent alone, we are presented with Android's default contact picking interface and the selection is shown to us via alert. 
+
+To make this a lot more useful, we give the pick intent a callback, which signals our code to utilize the startActivityForResult function. This allows us to use the data returned by a successful pick intent to perform an edit on the selected contact. In code, we pull the contact ID off of the returned data and append it to the standard Android contact editing URI. We assign this URI as the new intent's data and Titanium.Android.ACTION_EDIT as its type. Finally we launch the contact editing intent via startActivity. 
+
+Let's click "pick and edit contact" on the cookbook to watch it work. We'll scroll through the list until we find our desired contact, in this case Intent Cookbook. Once selected, our pick intent's callback launches the edit intent and we are presented with the Android contact editing interface for the Intent Cookbook contact. Just for fun, let's set the "title" to App and save.
+
+OK, so we've created, picked, and edited contacts on Android via Intents. For good measure, let's take a quick look at the Android contact list via the "view contacts" item. For reference, this is basically the same as calling Titanium.Contacts.showContacts() from the Titanium API.
+
+Here we have a list of all the contacts on your android device. We'll scroll down to Intent Cookbook entry and select it. In here we see all assigned contact information for Intent Cookbook. We also have the opportunity to edit, share, or delete the contact via the Android menu.
+
+So as you've seen here, you can run the full gauntlet of Android Contact functionality using nothing more than Intents. And as I mentioned earlier, this is only a small glimpse of what you can add to your apps. Be sure to look through the Android Intent documentation to see other features like data sync, launching activities, or creating custom intents and filters of your own. Play around with the intent cookbook app, check out the source code on github, and create some intents of your own. Let us know how your apps are using them, or if there's other recipes you'd like to see in the cookbook. 
+
+ 
+
+
+
+http://developer.appcelerator.com/blog/2011/08/android-intents.html
+http://developer.appcelerator.com/blog/2011/08/android-intent-filters.html
+http://developer.appcelerator.com/blog/2011/09/sharing-project-assets-with-android-intents.html
+http://developer.android.com/reference/android/content/Intent.html
