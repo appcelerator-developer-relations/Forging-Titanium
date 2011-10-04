@@ -35,14 +35,22 @@ var categories = [
 					type: 'vnd.android.cursor.dir/person'
 				}),
 				callback: function(e) {
-					setTimeout(function() { alert('Contact ID: ' + e.intent.data); }, 100);
+					Ti.API.debug(e);
+					Ti.API.debug(e.intent);
+					Ti.API.debug(e.intent.data);
+					if (e && e.intent && e.intent.data) {
+						setTimeout(function() { alert('Contact ID: ' + e.intent.data); }, 100);
+					}
 				}
 			},
 			{
 				title: 'Edit contact',
 				intent: (function() {
 					var contacts = Ti.Contacts.getAllPeople();
-					var contactId = parseInt(contacts[0].id) + '';
+					var contactId = '1';
+					if (contacts[0]) {
+						contactId = parseInt(contacts[0].id) + '';
+					}
 					var contactUrl = 'content://com.android.contacts/raw_contacts/' + contactId;
 					var intent = Ti.Android.createIntent({
 						action: Ti.Android.ACTION_EDIT,
@@ -58,14 +66,16 @@ var categories = [
 					type: 'vnd.android.cursor.dir/person'
 				}),
 				callback: function(e) {
-					var parts = e.intent.data.split('/');
-					var contactId = parts[parts.length-1];
-					var contactUrl = 'content://com.android.contacts/raw_contacts/' + contactId;
-					var intent = Ti.Android.createIntent({
-						action: Ti.Android.ACTION_EDIT,
-						data: contactUrl
-					});
-					Ti.Android.currentActivity.startActivity(intent);
+					if (e.intent && e.intent.data) {
+						var parts = e.intent.data.split('/');
+						var contactId = parts[parts.length-1];
+						var contactUrl = 'content://com.android.contacts/raw_contacts/' + contactId;
+						var intent = Ti.Android.createIntent({
+							action: Ti.Android.ACTION_EDIT,
+							data: contactUrl
+						});
+						Ti.Android.currentActivity.startActivity(intent);
+					}
 				}
 			},
 			{
@@ -355,7 +365,8 @@ tableview.addEventListener('click', function(e) {
 		navBarHidden: true	
 	});
 	var tv = Ti.UI.createTableView({
-		headerView: createIntentHeader(e.row.category)	
+		headerView: createIntentHeader(e.row.category),
+		separatorColor: '#aaa'
 	});
 	var data = [];
 	
