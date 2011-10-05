@@ -35,12 +35,3 @@ Here we have a list of all the contacts on your android device. We'll scroll dow
 In this episode we ran the full gauntlet of Android Contact functionality using nothing more than Intents. There are no modules necessary to access this powerful native interface. And as I mentioned earlier, this is only a small glimpse of what you can add to your Titanium Android apps. Be sure to look through the Android Intent documentation to see other features like data sync, launching activities, or creating custom intents and filters of your own. Play around with the intent cookbook app and check out the source code on github. Let us know how your apps are using them, or if there's other recipes you'd like to see in the cookbook. 
 
 Thanks for watching! See ya next time.
-
-
-
-
-
-http://developer.appcelerator.com/blog/2011/08/android-intents.html
-http://developer.appcelerator.com/blog/2011/08/android-intent-filters.html
-http://developer.appcelerator.com/blog/2011/09/sharing-project-assets-with-android-intents.html
-http://developer.android.com/reference/android/content/Intent.html
