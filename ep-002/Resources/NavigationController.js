@@ -46,5 +46,4 @@ exports.NavigationController.prototype.home = function() {
 	for(var i = 1, l = windows.length; i < l; i++) {
 		(this.navGroup) ? this.navGroup.close(windows[i]) : windows[i].close();
 	}
-	this.windowStack = [this.windowStack[0]]; //reset stack
 };
