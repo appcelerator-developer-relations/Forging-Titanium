@@ -1,4 +1,4 @@
-Hi everybody. Thanks for checking out this screencast. In this week's episode of "Forging Titanium" we'll be taking a look at how we can use Android Intents in our Titanium apps. Intents provide powerful native functionality that allows us to send tasks, like editing a contact or playing a video, to other apps installed on Android devices. If you're totally unfamiliar Android Intents, be sure to check out the "Helpful Links" section of the blog post accompanying this screencast.
+Hi everybody. Thanks for checking out this screencast. In this week's episode of "Forging Titanium" we'll be taking a look at how we can use Android Intents in our Titanium apps. Intents provide powerful native functionality that allows us to send tasks, like editing a contact or playing a video, to other apps installed on Android devices. If you're totally unfamiliar Android Intents, be sure to check out the "Episode Resources" section of the blog post accompanying this screencast.
 
 As with most powerful technology, Android Intents come with a little complexity. To make the topic easier to digest, I've created an easy to follow Intent cookbook app. As you can see, it's not unlike the Titanium Kitchen Sink layout. We can navigate through the lists to test out the various Android Intent functionality available to our apps. Before we dive into the examples, though, let's take a look at the code.
 
@@ -32,7 +32,9 @@ OK, so we've created, picked, and edited contacts on Android via Intents. For go
 
 Here we have a list of all the contacts on your android device. We'll scroll down to Intent Cookbook entry and select it. In here we see all assigned contact information for Intent Cookbook. We also have the opportunity to edit, share, or delete the contact via the Android menu.
 
-So as you've seen here, you can run the full gauntlet of Android Contact functionality using nothing more than Intents. And as I mentioned earlier, this is only a small glimpse of what you can add to your apps. Be sure to look through the Android Intent documentation to see other features like data sync, launching activities, or creating custom intents and filters of your own. Play around with the intent cookbook app and check out the source code on github. Let us know how your apps are using them, or if there's other recipes you'd like to see in the cookbook. 
+In this episode we ran the full gauntlet of Android Contact functionality using nothing more than Intents. There are no modules necessary to access this powerful native interface. And as I mentioned earlier, this is only a small glimpse of what you can add to your Titanium Android apps. Be sure to look through the Android Intent documentation to see other features like data sync, launching activities, or creating custom intents and filters of your own. Play around with the intent cookbook app and check out the source code on github. Let us know how your apps are using them, or if there's other recipes you'd like to see in the cookbook. 
+
+Thanks for watching! See ya next time.
 
 
 
