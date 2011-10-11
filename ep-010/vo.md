@@ -1,0 +1,1 @@
+Hi everybody! Thanks for watching this screencast. In this week's episode of Forging Titanium we'll be looking at how we can use CommonJS patterns to develop simplified, cross platform forms in Titanium.
