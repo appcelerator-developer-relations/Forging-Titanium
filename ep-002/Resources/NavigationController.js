@@ -8,9 +8,16 @@ exports.NavigationController.prototype.open = function(/*Ti.UI.Window*/windowToO
 
 	//grab a copy of the current nav controller for use in the callback
 	var that = this;
-	windowToOpen.addEventListener('close', function() {
+
+	// save the 'close' event handler into a variable (will be used to remove the event listener below)
+	var windowToOpen_closeEventHandler = function() {
 		that.windowStack.pop();
-	});
+		// remove this function from the 'close' event lisetner => prevents to be triggered more than once
+		windowToOpen.removeEventListener('close', windowToOpen_closeEventHandler);
+	};
+
+	windowToOpen.addEventListener('close', windowToOpen_closeEventHandler);
+	
 	
 	//hack - setting this property ensures the window is "heavyweight" (associated with an Android activity)
 	windowToOpen.navBarHidden = windowToOpen.navBarHidden || false;
