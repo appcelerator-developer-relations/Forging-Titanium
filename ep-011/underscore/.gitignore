@@ -1,0 +1,8 @@
+tmp
+.DS_Store
+build/android/*
+build/iphone/*
+!build/android/.gitignore
+!build/iphone/.gitignore
+.settings
+build.log
