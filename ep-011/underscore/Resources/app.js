@@ -5,18 +5,18 @@ var _ = require('underscore')._;
 
 var json = [
 	{ id:1, available:false, value:'vodka', quantity:1 },
-	{ id:2, available:true, value:'wine', quantity:13 },
-	{ id:2, available:true, value:'wine', quantity:13 },
+	{ id:2, available:true, value:'WINE', quantity:13 },
+	{ id:2, available:true, value:'WINE', quantity:13 },
 	{ id:3, available:true, value:'gin', quantity:42 },
 	{ id:4, available:true, value:'scotch', quantity:21 },
-	{ id:5, available:true, value:'whiskey', quantity:123 },
+	{ id:5, available:true, value:'WHISKEY', quantity:123 },
 	{ id:100, available:true, value:'schnapps', quantity:5 },
 	{ id:120, available:false, value:'beer', quantity:0 },
-	{ id:2, available:true, value:'wine', quantity:13 },
+	{ id:2, available:true, value:'WINE', quantity:13 },
 	{ id:999, available:true, value:'rum', quantity:55 },
-	{ id:1, available:false, value:'vodka', quantity:1 },
+	{ id:1, available:false, value:'Vodka', quantity:1 },
 	{ id:13, available:true, value:'brandy', quantity:3 },
-	{ id:42, available:true, value:'tequila', quantity:88 }
+	{ id:42, available:true, value:'Tequila', quantity:88 }
 ];
 
 // UI properties for table rows
@@ -45,18 +45,18 @@ var labelProperties = {
 };
 
 // Take the raw JSON array and format in the following manner:
-// - Remove any objects where available != true
 // - Make the objects unique by id
-// - Sort the objects by value alphabetically
+// - Remove any objects where available != true
 // - Capitalize the first letter of value
+// - Sort the objects by value alphabetically
 var rowValues = _(json).chain()
-	.select(function(obj) { return obj.available; })
 	.uniq(false, function(obj) { return obj.id; })
-	.sortBy(function(obj) { return obj.value; })
+	.select(function(obj) { return obj.available; })
 	.map(function(obj) { 
 		obj.value = obj.value.charAt(0).toUpperCase() + obj.value.substring(1).toLowerCase();
 		return obj; 
 	})
+	.sortBy(function(obj) { return obj.value; })
 	.value();
 	
 // Get the sum total of all quantities in the formatted array
@@ -65,7 +65,7 @@ var totalAvailable = _(rowValues).reduce(function(memo, obj) { return memo + obj
 // Create a TableViewRow for each formatted JSON object
 var rows = [];
 _(rowValues).each(function(obj) {
-	var row = _.extend(Ti.UI.createTableViewRow(), rowProperties);
+	var row = Ti.UI.createTableViewRow(rowProperties);
 	row.title = _.template('<%= value %> (<%= quantity %>)')(obj);
 	rows.push(row);
 });
