@@ -16,3 +16,4 @@ Sample code and other resources associated with each episode will be found here.
 * __Episode 9 (ep-009):__  Android Intent Cookbook
 * __Episode 10 (ep-010):__ Forms
 * __Episode 11 (ep-011):__ Titanium & Underscore.js 
+* __Episode 12 (ep-102):__ Titanium & Date.js
