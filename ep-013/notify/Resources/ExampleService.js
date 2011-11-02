@@ -21,8 +21,8 @@ if (serviceIntent.hasExtra('interval') && !Ti.App.Properties.hasProperty('notifi
         // you can use className or url to launch the app
         // className and packageName can be found by looking in the build folder
         // for example, mine looked like this
-        // build/android/gen/com/appcelerator/test/Test7Activity.java
-        // className : 'com.appcelerator.test.Test7Activity',
+        // build/android/gen/com/appcelerator/notify/NotifyActivity.java
+        // className : 'com.appcelerator.notify.NotifyActivity',
  
         // if you use url, you need to make some changes to your tiapp.xml
         url : 'app.js',
