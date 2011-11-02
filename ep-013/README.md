@@ -15,5 +15,6 @@ In this week’s episode of Forging Titanium we step into the world of Android S
     * [Intent and Intent Filters](http://developer.android.com/guide/topics/intents/intents-filters.html)
     * [Notifications](http://developer.android.com/guide/topics/ui/notifiers/notifications.html)
 * Appcelerator Wiki Guides
+    * [Android Notifications](http://wiki.appcelerator.org/display/guides/Android+Notifications)
     * [Location Services](http://wiki.appcelerator.org/display/guides/Location+Services)
     * [Tracking Position and Heading](http://wiki.appcelerator.org/display/guides/Tracking+Position+and+Heading)
