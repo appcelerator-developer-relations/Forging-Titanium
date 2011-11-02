@@ -10,3 +10,4 @@ Android notifications
 * android services doc
 * android notification doc
 * Ti.Android.Service & Ti.Android.Notification API docs
+* Ti.Android.NotificationManager
