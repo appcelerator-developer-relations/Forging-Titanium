@@ -18,9 +18,9 @@ Sample code and other resources associated with each episode will be found here.
 * __Episode 11 (ep-011):__ Titanium & Underscore.js 
 * __Episode 12 (ep-102):__ Titanium & Date.js
 * __Episode 13 (ep-013):__ Android Notifications
+* __Episode 14 (ep-014):__ Twisti Part 1: Android Module
 
 ### In Production
 
-* __Episode 14 (ep-014):__ Twisti Part 1: Android Module
 * __Episode 15 (ep-015):__ Twisti Part 2: 3D with Three.js
 * __Episode 16 (ep-016):__ Twisti Part 3: Sockets
