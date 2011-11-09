@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="build/.apt_generated"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+		<classpathentry kind="lib" path="/Users/tlukasavage/Development/android-sdk-mac_x86/platforms/android-7/android.jar"/>	<classpathentry kind="lib" path="/Users/tlukasavage/Development/android-sdk-mac_x86/add-ons/addon_google_apis_google_inc_7/libs/maps.jar"/>	<classpathentry kind="lib" path="/Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar"/>	<classpathentry kind="lib" path="/Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/js.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
