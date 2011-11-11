@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale = 1.0, minimum-scale = 1.0, maximum-scale = 10.0" /> 
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<script type="text/javascript" src="Three.js"></script>
+		<script type="text/javascript" src="RequestAnimationFrame.js"></script>
+		<title>3D Acceleromater Socket</title>
+		<style>
+			html, body, canvas {
+				padding: 0;
+				margin: 0;
+				outline: 0;
+				border: 0;	
+			}
+		</style>
+	</head>
+	<body style="background-color: #fff;">
+	</body>
+	<script>
+
+		    var camera, scene, renderer,
+		    geometry, material, mesh;
+		    var baseAzimuth = 0;
+		
+		    init();
+		    animate();
+		
+		    function init() {
+		        camera = new THREE.PerspectiveCamera( 35, 1, 1, 10000 );
+		        camera.position.z = 1000;
+		
+		        scene = new THREE.Scene();
+		        var materials = [];
+				for ( var i = 0; i < 6; i ++ ) {
+					switch(i) {
+						case 4:
+							materials.push(
+								[new THREE.MeshBasicMaterial({ 
+									map: THREE.ImageUtils.loadTexture( 'front.jpg' )
+								})]
+							);
+							break;
+						case 5:
+							materials.push(
+								[new THREE.MeshBasicMaterial({ 
+									map: THREE.ImageUtils.loadTexture( 'back.jpg' )
+								})]
+							);
+							break;
+						default:
+							materials.push(
+								[ new THREE.MeshBasicMaterial({ 
+									color: 0xdddddd 
+								})]
+							);
+							break;
+					}
+				}
+		        
+		        geometry = new THREE.CubeGeometry( 231, 450, 18, 1, 1, 1, materials );
+		        mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial() );
+		        mesh.overdraw = true;
+		        scene.add( mesh );
+		
+		        renderer = new THREE.CanvasRenderer();
+		        //renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( 320, 320 );
+		        document.body.appendChild( renderer.domElement );
+		        
+		        Ti.App.addEventListener('app:updateRotation', function(e) {
+		        	if (e.calibrate) {
+		        		baseAzimuth = -1 * e.azimuth;
+		        	}
+		        	mesh.rotation.x = -1 * e.pitch;
+		        	mesh.rotation.y = -1 * (baseAzimuth + e.azimuth);
+		        	mesh.rotation.z = -1 * e.roll;
+		        });
+		    }
+		
+		    function animate() {
+		        // Include examples/js/RequestAnimationFrame.js for cross-browser compatibility.
+		        requestAnimationFrame( animate );
+		        render();
+		    }
+		
+		    function render() {
+		        renderer.render( scene, camera );
+		    }
+		</script>
+</html>

@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+description: My module
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2011 by Your Company
+
+
+# these should not be edited
+name: twisti
+moduleid: ti.twisti
+guid: 41e5d78f-b9ec-4a6f-8726-2131d19fb848
+platform: android
+minsdk: 1.7.5
