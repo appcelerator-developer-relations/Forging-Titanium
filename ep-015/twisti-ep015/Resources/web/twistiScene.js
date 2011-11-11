@@ -41,7 +41,6 @@ Twisti.baseAzimuth = 0;
 		// Create an HTML rendering element
 	    renderer = new THREE.CanvasRenderer();
 	    renderer.setSize( window.innerWidth, window.innerHeight );
-		//renderer.setSize( 320, 320 );
 	    document.body.appendChild( renderer.domElement );
 	    
 	    // Update phone mesh with sensor data from Titanium
