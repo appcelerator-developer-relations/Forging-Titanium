@@ -20,7 +20,8 @@ var createPositionDataLabel = function(name, value) {
 var win = Ti.UI.createWindow({
 	backgroundColor: '#eee',
 	layout: 'vertical',
-	fullscreen: false
+	fullscreen: false,
+	exitOnClose: true
 });
 win.orientationModes = [Ti.UI.PORTRAIT];
 var webview = Ti.UI.createWebView({
