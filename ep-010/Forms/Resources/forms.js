@@ -150,13 +150,13 @@ exports.createForm = function(o) {
 		contentHeight: 'auto',
 		contentWidth: 'auto',
 		showVerticalScrollIndicator:true,
-    	showHorizontalScrollIndicator:true,
+    		showHorizontalScrollIndicator:true,
     	
-    	// new stuff
-    	container: container,
-    	fieldStyle: o.style || exports.STYLE_HINT,
-    	addField: addField,
-    	addFields: addFields
+    		// new stuff
+    		container: container,
+    		fieldStyle: o.style || exports.STYLE_HINT,
+    		addField: addField,
+    		addFields: addFields
 	});
 
 	form.addFields(o.fields, fieldRefs);
