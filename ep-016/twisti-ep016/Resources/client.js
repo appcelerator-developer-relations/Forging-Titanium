@@ -11,7 +11,6 @@ var createObjectFromBuffer = function(buffer) {
 			type: Ti.Codec.TYPE_FLOAT,
 			byteOrder: Ti.Codec.BIG_ENDIAN	
 		});	
-		Ti.API.info(obj[props[i]]);
 		pos += size;
 	}
 	
@@ -19,13 +18,12 @@ var createObjectFromBuffer = function(buffer) {
 };
 
 var handleConnection = function(e) {
-	var socket = e.source;
+	var socket = e.source ? e.source : e.socket;
 	
 	// start read loop
 	var readBuffer = Ti.createBuffer({length:32});
 	var callback = function(e) {
 		var data = createObjectFromBuffer(readBuffer);
-		Ti.API.info(data);
         Ti.App.fireEvent('app:updateRotation', data);
         readBuffer.clear(); 
         Ti.Stream.read(socket, readBuffer, callback);

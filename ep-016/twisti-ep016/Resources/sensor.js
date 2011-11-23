@@ -40,7 +40,6 @@ var updateClients = function() {
 	if (currentOrientation !== undefined) {
 		var buffer = createOrientationBuffer(currentOrientation);
 		var len = clients.length;
-		//Ti.API.info('length: ' + clients.length);
 		for (var i = 0; i < len; i++) {
 			try {
 				clients[i].write(buffer);	
@@ -69,7 +68,6 @@ exports.listen = function(port) {
 	var listenSocket = Ti.Network.Socket.createTCP({
 	    port: port,
 	    accepted: function(e) {
-	    	Ti.API.info('added socket')
 	    	clients.push(e.inbound);
 	    	e.socket.accept({});
 	    },
@@ -90,7 +88,7 @@ exports.listen = function(port) {
 	listenSocket.accept({});
 };
 
-exports.createSensorWindow = function() {
+exports.createSensorWindow = function(port) {
 	var needsCalibration = false;
 	var i = 0;
 	

@@ -45,7 +45,6 @@ Twisti.baseAzimuth = 0;
 	    
 	    // Update phone mesh with sensor data from Titanium
 	    Ti.App.addEventListener('app:updateRotation', function(e) {
-	    	Ti.API.warn(e);
 	    	if (e.calibrate) {
 	    		Twisti.baseAzimuth = -1 * e.azimuth;
 	    	}
