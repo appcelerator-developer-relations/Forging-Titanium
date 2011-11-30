@@ -1,4 +1,4 @@
-var SENSOR_IP_ADDRESS = '192.168.98.106';
+var SENSOR_IP_ADDRESS = '192.168.98.104';
 var SENSOR_PORT = 40404;
 var isAndroid = Ti.Platform.osname === 'android';
 var win, sensor, alertDialog;

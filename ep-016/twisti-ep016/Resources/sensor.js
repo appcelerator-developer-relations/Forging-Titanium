@@ -68,8 +68,8 @@ exports.listen = function(port) {
 	var listenSocket = Ti.Network.Socket.createTCP({
 	    port: port,
 	    accepted: function(e) {
-	    	clients.push(e.inbound);
-	    	e.socket.accept({});
+	    		clients.push(e.inbound);
+	    		e.socket.accept({});
 	    },
 	    error: function(e) {
 	        Ti.API.error("Socket <" + e.socket + "> encountered error when listening");
