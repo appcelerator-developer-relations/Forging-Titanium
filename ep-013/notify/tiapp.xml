@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
+    <sdk-version>1.7.3</sdk-version>
     <deployment-targets>
         <target device="mobileweb">false</target>
         <target device="iphone">false</target>
@@ -35,20 +36,20 @@
         </orientations>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-    	<!-- the activities tag must be added if you want to use the url property to launch your app -->
-	    <activities>
-	    	<activity url="app.js">
-	       		<intent-filter>
-	           		<action android:name="android.intent.action.VIEW"/>
-	           		<category android:name="android.intent.category.DEFAULT"/>
-	           		<category android:name="android.intent.category.BROWSABLE"/>
-	       		</intent-filter>
-	   		</activity>
-	   	</activities>
-	   	<!-- the services tag must be added so that our service will run -->
-	   	<services>
-	   		<service type="interval" url="ExampleService.js"/>
-	   	</services>
+        <!-- the activities tag must be added if you want to use the url property to launch your app -->
+        <activities>
+            <activity url="app.js">
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW"/>
+                    <category android:name="android.intent.category.DEFAULT"/>
+                    <category android:name="android.intent.category.BROWSABLE"/>
+                </intent-filter>
+            </activity>
+        </activities>
+        <!-- the services tag must be added so that our service will run -->
+        <services>
+            <service type="interval" url="ExampleService.js"/>
+        </services>
     </android>
     <modules/>
 </ti:app>
