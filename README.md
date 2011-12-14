@@ -22,3 +22,9 @@ Sample code and other resources associated with each episode will be found here.
 * __Episode 15 (ep-015):__ Twisti Part 2: 3D with Three.js
 * __Episode 16 (ep-016):__ Twisti Part 3: Sockets
 * __Episode 17 (ep-017):__ Android, Meet V8
+
+### In Production
+
+* __Episode 18 (ep-018):__ CommonJS Deep Dive
+* __Episode 19 (ep-019):__ Titanium Studio 1.0.7
+* __Episode 20 (ep-020):__ What's New in Titanium Mobile 1.8
