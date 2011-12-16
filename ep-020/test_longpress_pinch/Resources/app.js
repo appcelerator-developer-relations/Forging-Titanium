@@ -12,7 +12,7 @@ var view = Ti.UI.createView({
 	width: baseWidth
 });
 var viewLabel = Ti.UI.createLabel({
-	text: '200 x 200',
+	text: baseWidth + ' x ' + baseHeight,
 	color: '#fff',
 	font: {
 		fontWeight: 'bold',
