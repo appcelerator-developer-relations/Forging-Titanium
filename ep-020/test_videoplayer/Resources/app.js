@@ -29,27 +29,28 @@ var content = Ti.UI.createView({
 	bottom: 0,
 	left: 0,
 	right: 0,
-	backgroundColor: '#fff',
-	layout: 'vertical'
+	backgroundColor: '#fff'
 });
 var videoPlayer = Ti.Media.createVideoPlayer({
 	url:'movie.mp4',
-    //movieControlStyle: Ti.Media.VIDEO_CONTROL_NONE,
+	mediaControlStyle: Ti.Media.VIDEO_CONTROL_EMBEDDED,
     top: 5,
     left: 5,
     right: 5,
+    height: 200,
     autoplay: true,
     backgroundColor: '#000'
 });
 var loremIpsum = Ti.UI.createLabel({
 	text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-	top: 15,
+	top: 220,
 	left: 15,
 	right: 10,
 	color: '#333',
 	font: {
 		fontSize: 12	
-	}
+	},
+	height: 'auto'
 });
 content.add(videoPlayer);
 content.add(loremIpsum);
