@@ -1,0 +1,1 @@
+Hey everybody! Welcome to another episode of Forging Titanium. Today we'll be talking about the 1.8 release of Titanium Mobile. 
