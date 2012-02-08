@@ -7,7 +7,7 @@
         <target device="android">true</target>
         <target device="blackberry">false</target>
     </deployment-targets>
-    <sdk-version>1.8.0.1.RC1</sdk-version>
+    <sdk-version>1.8.0.1</sdk-version>
     <id>test.longpress.pinch</id>
     <name>test_longpress_pinch</name>
     <version>1.0</version>
@@ -36,9 +36,9 @@
         </orientations>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-    	<manifest>
-    		<supports-screens android:anyDensity="false"/>
-    	</manifest>
+        <manifest>
+            <supports-screens android:anyDensity="false"/>
+        </manifest>
     </android>
     <modules/>
 </ti:app>
