@@ -6,22 +6,23 @@ Sample code and other resources associated with each episode will be found here.
 
 ## Episode Guide
 
-* __Episode 2 (ep-002):__  A Cross-Platform Navigation Controller
-* __Episode 3 (ep-003):__  Creating Custom Components
-* __Episode 4 (ep-004):__  Utility Application Template
-* __Episode 5 (ep-005):__  Parse - A Simple Back End Server for Mobile Applications
-* __Episode 6 (ep-006):__  A Single Context Tab Group Template
-* __Episode 7 (ep-007):__  Titanium and Twilio for Cloud Communications
-* __Episode 8 (ep-008):__  Mac (App Store) Attack! Part One
-* __Episode 9 (ep-009):__  Android Intent Cookbook
-* __Episode 10 (ep-010):__ Forms
-* __Episode 11 (ep-011):__ Titanium & Underscore.js 
-* __Episode 12 (ep-102):__ Titanium & Date.js
-* __Episode 13 (ep-013):__ Android Notifications
-* __Episode 14 (ep-014):__ Twisti Part 1: Android Module
-* __Episode 15 (ep-015):__ Twisti Part 2: 3D with Three.js
-* __Episode 16 (ep-016):__ Twisti Part 3: Sockets
-* __Episode 17 (ep-017):__ Android, Meet V8
-* __Episode 18 (ep-018):__ Lost episode, available only on special edition Blu-Ray :)
-* __Episode 19 (ep-019):__ Titanium Studio 1.0.7
-* __Episode 20 (ep-020):__ What's New in Titanium Mobile 1.8
+* __Episode 1:__ CommonJS Modules __( [blog](http://developer.appcelerator.com/blog/2011/08/forging-titanium-episode-1-commonjs-modules.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/27447911) )__
+* __Episode 2:__ A Cross-Platform Navigation Controller __( [blog](http://developer.appcelerator.com/blog/2011/08/forging-titanium-episode-2-a-cross-platform-navigation-controller.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/27834295) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-002) )__
+* __Episode 3:__  Creating Custom Components __( [blog](http://developer.appcelerator.com/blog/2011/08/forging-titanium-episode-3-custom-ui-components.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/28122504) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-003) )__
+* __Episode 4:__  Utility Application Template __( [blog](http://developer.appcelerator.com/blog/2011/08/forging-titanium-episode-4-a-utility-application-template.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/28428962) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-004) )__
+* __Episode 5:__  Parse - A Simple Back End Server for Mobile Applications __( [blog](http://developer.appcelerator.com/blog/2011/09/forging-titanium-episode-5-parse-a-simple-back-end-for-mobile-applications.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/28704163) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-005) )__
+* __Episode 6:__  A Single Context Tab Group Template __( [blog](http://developer.appcelerator.com/blog/2011/09/forging-titanium-episode-6-a-single-context-tabbed-application-template.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/29059611) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-006) )__
+* __Episode 7:__  Titanium and Twilio for Cloud Communications __( [blog](http://developer.appcelerator.com/blog/2011/09/forging-titanium-episode-7-titanium-and-twilio-for-cloud-communications.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/29459123) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-007) )__
+* __Episode 8:__  Mac (App Store) Attack! Part One __( [blog](http://developer.appcelerator.com/blog/2011/09/forging-titanium-episode-8-mac-app-store-attack-part-1.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/29730646) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-008) )__
+* __Episode 9:__  Android Intent Cookbook __( [blog](http://developer.appcelerator.com/blog/2011/10/forging-titanium-episode-9-android-intent-cookbook.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/30085488) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-009) )__
+* __Episode 10:__ Forms __( [blog](http://developer.appcelerator.com/blog/2011/10/forging-titanium-episode-10-forms.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/30387041) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-010) )__
+* __Episode 11:__ Titanium & Underscore.js __( [blog](http://developer.appcelerator.com/blog/2011/10/forging-titanium-episode-11-titanium-underscore-js.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/30796377) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-011) )__ 
+* __Episode 12:__ Titanium & Date.js __( [blog](http://developer.appcelerator.com/blog/2011/10/forging-titanium-episode-12-titanium-date-js.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/31228723) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-012) )__
+* __Episode 13:__ Android Notifications __( [blog](http://developer.appcelerator.com/blog/2011/11/forging-titanium-episode-13-android-notifications.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/31511185) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-013) )__
+* __Episode 14:__ Twisti Part 1: Android Module __( [blog](http://developer.appcelerator.com/blog/2011/11/forging-titanium-episode-14-twisti-part-1-android-module.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/31868247) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-014) )__
+* __Episode 15:__ Twisti Part 2: 3D with Three.js __( [blog](http://developer.appcelerator.com/blog/2011/11/forging-titanium-episode-15-twisti-part-2-3d-with-three-js.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/32102962) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-015) )__
+* __Episode 16:__ Twisti Part 3: Sockets __( [blog](http://developer.appcelerator.com/blog/2011/12/forging-titanium-episode-16-twisti-part-3-sockets.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/32976053) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-016) )__
+* __Episode 17:__ Android, Meet V8 __( [blog](http://developer.appcelerator.com/blog/2011/12/forging-titanium-episode-17-android-meet-v8.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/33249107) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-017) )__
+* __Episode 18:__ Lost episode, available only on special edition Blu-Ray :)
+* __Episode 19:__ Titanium Studio 1.0.7 __( [blog](http://developer.appcelerator.com/blog/2011/12/titanium-mobile-1-8.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/33685267) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-019) )__
+* __Episode 20:__ What's New in Titanium Mobile 1.8 __( [blog](http://developer.appcelerator.com/blog/2011/12/titanium-mobile-1-8.html) | [video](http://vimeopro.com/appcelerator/forging-titanium/video/33806540) | [code](https://github.com/appcelerator-developer-relations/Forging-Titanium/tree/master/ep-020) )__
