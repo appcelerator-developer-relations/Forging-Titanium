@@ -1,0 +1,6 @@
+[submodule "ep-022/pathmenu.js"]
+	path = ep-022/pathmenu.js
+	url = git://github.com/tonylukasavage/pathmenu.js.git
+[submodule "ep-022/path.animator"]
+	path = ep-022/path.animator
+	url = git://github.com/tonylukasavage/path.animator.git
