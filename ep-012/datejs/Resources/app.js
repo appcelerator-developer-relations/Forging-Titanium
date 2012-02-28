@@ -2,7 +2,7 @@ var isAndroid = Ti.Platform.osname === 'android';
 Ti.UI.backgroundColor = '#222';
 
 // Include Date.js via CommonJS require()
-require('date');
+var DateJS = require('date').DateJS;
 
 // Suggestions for date values to test
 suggestions = [
@@ -108,7 +108,7 @@ picker.addEventListener('change', function(e) {
 dateText.addEventListener('change', function(e) {
 	var val = dateText.value;
 	if (val.length > 0) {
-		var date = Date.parse(val);
+		var date = DateJS.parse(val);
 		if (date !== null) {
 			label.text = date.toString('dddd, MMMM dd, yyyy h:mm:ss tt');
 		} else {
