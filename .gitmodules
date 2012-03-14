@@ -4,3 +4,6 @@
 [submodule "ep-022/path.animator"]
 	path = ep-022/path.animator
 	url = git://github.com/tonylukasavage/path.animator.git
+[submodule "ep-023/TiShadow"]
+	path = ep-023/TiShadow
+	url = https://github.com/dbankier/TiShadow.git
