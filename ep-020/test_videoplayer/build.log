@@ -1,0 +1,70 @@
+Logfile initialized
+[INFO] logfile = /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build.log
+[DEBUG] /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/builder.py simulator test_videoplayer /Users/tlukasavage/Development/android-sdk-mac_x86 /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer test.videoplayer 7 HVGA 
+[INFO] Building test_videoplayer for Android ... one moment
+[INFO] Titanium SDK version: 1.8.0.1 (12/22/11 13:09 fbdc96f)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.015261 seconds on emulator to get ready
+[DEBUG] test.videoplayer installed? False
+[INFO] Copying project resources..
+[INFO] Detected tiapp.xml change (or assets deleted), forcing full re-build...
+[TRACE] COPYING CREATED FILE: /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/Resources/android/appicon.png => /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/bin/assets/Resources/appicon.png
+[TRACE] COPYING CREATED FILE: /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/Resources/android/default.png => /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/bin/assets/Resources/default.png
+[TRACE] COPYING CREATED FILE: /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/Resources/app.js => /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/bin/assets/Resources/app.js
+[TRACE] COPYING CREATED FILE: /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/Resources/movie.mp4 => /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/bin/assets/Resources/movie.mp4
+[TRACE] Generating Java Classes
+[DEBUG] Processing Android resource drawables
+[DEBUG] app stylesheet => /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/gen/test/videoplayer/ApplicationStylesheet.java
+[DEBUG] copying app icon: /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/bin/assets/Resources/appicon.png
+[DEBUG] generating theme.xml
+[DEBUG] found splash screen at /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/bin/assets/Resources/default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/gen/test/videoplayer/ApplicationStylesheet.java to javac build list
+[DEBUG] adding /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/gen/test/videoplayer/R.java to javac build list
+[DEBUG] adding /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/gen/test/videoplayer/Test_videoplayerActivity.java to javac build list
+[DEBUG] adding /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/gen/test/videoplayer/Test_videoplayerAppInfo.java to javac build list
+[DEBUG] adding /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/gen/test/videoplayer/Test_videoplayerApplication.java to javac build list
+[DEBUG] Building Java Sources: "/Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/gen/test/videoplayer/ApplicationStylesheet.java" "/Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/gen/test/videoplayer/R.java" "/Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/gen/test/videoplayer/Test_videoplayerActivity.java" "/Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/gen/test/videoplayer/Test_videoplayerAppInfo.java" "/Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/gen/test/videoplayer/Test_videoplayerApplication.java"
+[INFO] Waiting for SDCard to become available..
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: /Users/tlukasavage/Documents/Titanium Studio Workspace/Forging-Titanium/ep-020/test_videoplayer/build/android/bin/app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/app.js
+[DEBUG] from resource zip => assets/Resources/appicon.png
+[DEBUG] from resource zip => assets/Resources/default.png
+[DEBUG] from resource zip => assets/Resources/movie.mp4
+[DEBUG] from resource zip => assets/app.json
+[DEBUG] from resource zip => assets/index.json
+[DEBUG] from resource zip => assets/tiapp.xml
+[DEBUG] from resource zip => res/drawable/appicon.png
+[DEBUG] from resource zip => res/drawable/background.png
+[DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
+[DEBUG] from resource zip => AndroidManifest.xml
+[DEBUG] from resource zip => resources.arsc
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR /Users/tlukasavage/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.015424 seconds on emulator to get ready
+[INFO] Installing application on device
+[INFO] Launching application ... test_videoplayer
+[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=test.videoplayer/.Test_videoplayerActivity }
+
+[INFO] Deployed test_videoplayer ... Application should be running.
